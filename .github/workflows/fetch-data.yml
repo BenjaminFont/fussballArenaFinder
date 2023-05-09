@@ -24,3 +24,4 @@ jobs:
 
     - name: Update Frontend
       run: npm run deploy
+      working-directory: gh-pages
