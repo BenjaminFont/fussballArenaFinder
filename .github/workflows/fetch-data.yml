@@ -22,6 +22,10 @@ jobs:
     - name: Run node.js script
       run: node index.js
 
+    - name: Install react dependencies
+      run: npm install
+      working-directory: gh-pages/stuttgart-soccer-24
+
     - name: Update Frontend
       run: npm run deploy
-      working-directory: gh-pages
+      working-directory: gh-pages/stuttgart-soccer-24
