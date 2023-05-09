@@ -34,5 +34,5 @@ Contributions are welcome, just submit a pull request.
 
 # About
 
-This project was first suggested in [Hackergarten Stuttgart](https://www.meetup.com/pt-BR/hackergarten-stuttgart/).
+This project was first suggested in [Hackergarten Stuttgart](https://www.meetup.com/hackergarten-stuttgart/events/292448297/).
 
