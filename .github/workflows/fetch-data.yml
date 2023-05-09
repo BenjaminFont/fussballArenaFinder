@@ -1,0 +1,38 @@
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: "0 0/1 * * *"
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.5.2
+      with:
+          node-version: '18.x'
+          
+    - name: Get dependencies
+      run: npm install
+      
+    - name: Run node.js script
+      run: node index.js
+
+    - name: Install react dependencies
+      run: npm install
+      working-directory: gh-pages/stuttgart-soccer-24
+
+    - name: Build Frontend
+      run: | 
+        npm run build
+      working-directory: gh-pages/stuttgart-soccer-24
+    
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .gh-pages/stuttgart-soccer-24/dist
