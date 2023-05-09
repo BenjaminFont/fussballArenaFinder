@@ -1,5 +1,5 @@
 import './App.css';
-import data from './mac-arena-2023-05-10.json';
+import data from './data.json';
 
 function App() {
 
