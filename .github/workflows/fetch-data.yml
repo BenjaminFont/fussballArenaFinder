@@ -27,5 +27,8 @@ jobs:
       working-directory: gh-pages/stuttgart-soccer-24
 
     - name: Update Frontend
-      run: npm run deploy
+      run: | 
+        git config --global user.email "fetch@bot.com"
+        git config --global user.name "Fetch Bot"
+        npm run deploy
       working-directory: gh-pages/stuttgart-soccer-24
