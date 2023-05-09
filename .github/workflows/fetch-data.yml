@@ -26,9 +26,13 @@ jobs:
       run: npm install
       working-directory: gh-pages/stuttgart-soccer-24
 
-    - name: Update Frontend
+    - name: Build Frontend
       run: | 
-        git config --global user.email "fetch@bot.com"
-        git config --global user.name "Fetch Bot"
-        npm run deploy
+        npm run build
       working-directory: gh-pages/stuttgart-soccer-24
+    
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .gh-pages/stuttgart-soccer-24/dist
