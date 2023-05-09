@@ -21,3 +21,6 @@ jobs:
       
     - name: Run node.js script
       run: node index.js
+
+    - name: Update Frontend
+      run: npm run deploy
