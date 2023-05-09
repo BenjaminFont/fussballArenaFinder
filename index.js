@@ -1,6 +1,7 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
 import moment from "moment";
+import fs from "fs";
 
 class ParsedData {
   constructor(source_website, court, time_slot_start, time_slot_end, is_available) {
@@ -52,11 +53,16 @@ async function scrape_mcarena_esslingen(requested_date) {
 }
 
 
-const requested_date = new moment("2023-03-10");
-const availabilities = await scrape_mcarena_esslingen(requested_date);
+const parsingDate = "2023-05-10"
+const requestedDate = new moment(parsingDate);
+const availabilities = await scrape_mcarena_esslingen(requestedDate);
 // now for the parser we print only available slots
 const date_format = "DD MMM hh:mm"
 availabilities.forEach((elem) => {
   if (elem.is_available)
     console.log(`Court ${elem.court} is available between ${elem.time_slot_start.format(date_format)} and ${elem.time_slot_end.format(date_format)}`)
 });
+
+// export to a files
+const jsonStr = JSON.stringify(availabilities, null, 2);
+fs.writeFileSync(`data/mac-arena-${requestedDate.format("YYYY-MM-DD")}.json`, jsonStr, 'utf8');
