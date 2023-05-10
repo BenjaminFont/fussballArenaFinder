@@ -1,8 +1,12 @@
 on:
   workflow_dispatch:
+  push:
+    branches:
+        - 'main'
   schedule:
-  - cron: "0 0/1 * * *"
-  
+    - cron: "0 * * * *"
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +23,7 @@ jobs:
     - name: Get dependencies
       run: npm install
       
-    - name: Run node.js script
+    - name: Run node.js scraping script
       run: node index.js
 
     - name: Install react dependencies
@@ -35,4 +39,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .gh-pages/stuttgart-soccer-24/dist
+        publish_branch: gh-pages
