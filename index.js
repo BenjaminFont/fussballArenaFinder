@@ -65,4 +65,4 @@ availabilities.forEach((elem) => {
 
 // export to a files
 const jsonStr = JSON.stringify(availabilities, null, 2);
-fs.writeFileSync(`data/mac-arena-${requestedDate.format("YYYY-MM-DD")}.json`, jsonStr, 'utf8');
+fs.writeFileSync(`gh-pages/stuttgart-soccer-24/src/scraped/mac-arena-${requestedDate.format("YYYY-MM-DD")}.json`, jsonStr, 'utf8');
