@@ -45,7 +45,7 @@ function BasicCard({
   time_slot_end,
   is_available,
 }) {
-  const displayFormat = "DD MMM HH:MM"
+  const displayFormat = "DD MMM HH:mm"
   return (
     <Card sx={{ minWidth: 275 }}>
       <CardContent>
