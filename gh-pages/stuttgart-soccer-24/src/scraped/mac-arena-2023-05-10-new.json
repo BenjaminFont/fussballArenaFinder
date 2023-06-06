@@ -1,0 +1,44 @@
+[
+  {
+    "source_website": "https://mcarena-esslingen.de/reservations.php",
+    "court": "SWE-Arena",
+    "results": [
+      {
+        "time_slot_start": "2023-05-10T06:00:00.000Z",
+        "time_slot_end": "2023-05-10T06:30:00.000Z",
+        "is_available": true
+      },
+      {
+        "time_slot_start": "2023-05-10T06:00:00.000Z",
+        "time_slot_end": "2023-05-10T06:30:00.000Z",
+        "is_available": true
+      },
+      {
+        "time_slot_start": "2023-05-10T06:00:00.000Z",
+        "time_slot_end": "2023-05-10T06:30:00.000Z",
+        "is_available": true
+      }
+    ]
+  },
+  {
+    "source_website": "https://mcarena-esslingen.de/reservations.php",
+    "court": "Andere Arena",
+    "results": [
+      {
+        "time_slot_start": "2023-05-10T06:00:00.000Z",
+        "time_slot_end": "2023-05-10T06:30:00.000Z",
+        "is_available": true
+      },
+      {
+        "time_slot_start": "2023-05-10T06:00:00.000Z",
+        "time_slot_end": "2023-05-10T06:30:00.000Z",
+        "is_available": true
+      },
+      {
+        "time_slot_start": "2023-05-10T06:00:00.000Z",
+        "time_slot_end": "2023-05-10T06:30:00.000Z",
+        "is_available": true
+      }
+    ]
+  }
+]
