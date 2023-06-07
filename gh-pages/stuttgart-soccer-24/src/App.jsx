@@ -1,5 +1,5 @@
 import './App.css';
-import data from './scraped/mac-arena-2023-05-10.json';
+import data from './scraped/data.json';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
