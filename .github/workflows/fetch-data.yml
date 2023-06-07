@@ -22,9 +22,11 @@ jobs:
           
     - name: Get dependencies
       run: npm install
+      working-directory: backend/
       
     - name: Run node.js scraping script
       run: node index.js
+      working-directory: backend/
 
     - name: Install react dependencies
       run: npm install
