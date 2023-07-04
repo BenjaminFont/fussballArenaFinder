@@ -27,11 +27,20 @@ function AutoGrid() {
   return (
     <Box>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        {data.map((e) => {
+        {data.map((court_info) => {
           // only create grids for the available slots
-          return e.is_available ? <Grid xs={3}>
-            <BasicCard  {...e} />
-          </Grid> : null;
+          return court_info.results.map((time_slot, idx) => {
+            return <Grid xs={3} key={idx}>
+              <BasicCard
+                source_website={court_info.source_website}
+                court={court_info.court}
+                time_slot_start={time_slot.time_slot_start}
+                time_slot_end={time_slot.time_slot_end}
+                is_available={true}
+              />
+            </Grid>;
+          })
+
         })}
       </Grid>
     </Box>
