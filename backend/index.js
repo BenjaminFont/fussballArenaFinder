@@ -3,7 +3,7 @@ import { writeToFile } from "./common.js";
 import { scrape } from './parsers/mcarena.js';
 
 
-const parsingDate = "2023-05-10"
+const parsingDate = "2023-07-05"
 const requestedDate = new moment(parsingDate);
 const availabilities = await scrape(requestedDate);
 // now for the parser we print only available slots
