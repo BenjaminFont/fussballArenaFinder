@@ -1,610 +1,752 @@
 [
   {
     "source_website": "https://mcarena-schorndorf.de/reservations.php",
-    "court": "Arena",
-    "day": "2023-07-04T22:00:00.000Z",
+    "court": "McArena Schorndorf/Arena",
+    "day": "2023-07-06T22:00:00.000Z",
     "results": [
       {
-        "time_slot_start": "2023-07-05T04:00:00.000Z",
-        "time_slot_end": "2023-07-05T04:30:00.000Z"
+        "time_slot_start": "2023-07-07T04:00:00.000Z",
+        "time_slot_end": "2023-07-07T04:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T04:30:00.000Z",
-        "time_slot_end": "2023-07-05T05:00:00.000Z"
+        "time_slot_start": "2023-07-07T04:30:00.000Z",
+        "time_slot_end": "2023-07-07T05:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T05:00:00.000Z",
-        "time_slot_end": "2023-07-05T05:30:00.000Z"
+        "time_slot_start": "2023-07-07T05:00:00.000Z",
+        "time_slot_end": "2023-07-07T05:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T05:30:00.000Z",
-        "time_slot_end": "2023-07-05T06:00:00.000Z"
+        "time_slot_start": "2023-07-07T05:30:00.000Z",
+        "time_slot_end": "2023-07-07T06:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T06:00:00.000Z",
-        "time_slot_end": "2023-07-05T06:30:00.000Z"
+        "time_slot_start": "2023-07-07T06:00:00.000Z",
+        "time_slot_end": "2023-07-07T06:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T06:30:00.000Z",
-        "time_slot_end": "2023-07-05T07:00:00.000Z"
+        "time_slot_start": "2023-07-07T06:30:00.000Z",
+        "time_slot_end": "2023-07-07T07:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T07:00:00.000Z",
-        "time_slot_end": "2023-07-05T07:30:00.000Z"
+        "time_slot_start": "2023-07-07T07:00:00.000Z",
+        "time_slot_end": "2023-07-07T07:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T07:30:00.000Z",
-        "time_slot_end": "2023-07-05T08:00:00.000Z"
+        "time_slot_start": "2023-07-07T07:30:00.000Z",
+        "time_slot_end": "2023-07-07T08:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T08:00:00.000Z",
-        "time_slot_end": "2023-07-05T08:30:00.000Z"
+        "time_slot_start": "2023-07-07T08:00:00.000Z",
+        "time_slot_end": "2023-07-07T08:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T08:30:00.000Z",
-        "time_slot_end": "2023-07-05T09:00:00.000Z"
+        "time_slot_start": "2023-07-07T08:30:00.000Z",
+        "time_slot_end": "2023-07-07T09:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T09:00:00.000Z",
-        "time_slot_end": "2023-07-05T09:30:00.000Z"
+        "time_slot_start": "2023-07-07T09:00:00.000Z",
+        "time_slot_end": "2023-07-07T09:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T09:30:00.000Z",
-        "time_slot_end": "2023-07-05T10:00:00.000Z"
+        "time_slot_start": "2023-07-07T09:30:00.000Z",
+        "time_slot_end": "2023-07-07T10:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T10:00:00.000Z",
-        "time_slot_end": "2023-07-05T10:30:00.000Z"
+        "time_slot_start": "2023-07-07T10:00:00.000Z",
+        "time_slot_end": "2023-07-07T10:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T10:30:00.000Z",
-        "time_slot_end": "2023-07-05T11:00:00.000Z"
+        "time_slot_start": "2023-07-07T10:30:00.000Z",
+        "time_slot_end": "2023-07-07T11:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T11:00:00.000Z",
-        "time_slot_end": "2023-07-05T11:30:00.000Z"
+        "time_slot_start": "2023-07-07T11:00:00.000Z",
+        "time_slot_end": "2023-07-07T11:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T11:30:00.000Z",
-        "time_slot_end": "2023-07-05T12:00:00.000Z"
+        "time_slot_start": "2023-07-07T11:30:00.000Z",
+        "time_slot_end": "2023-07-07T12:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T12:00:00.000Z",
-        "time_slot_end": "2023-07-05T12:30:00.000Z"
+        "time_slot_start": "2023-07-07T12:00:00.000Z",
+        "time_slot_end": "2023-07-07T12:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T12:30:00.000Z",
-        "time_slot_end": "2023-07-05T13:00:00.000Z"
+        "time_slot_start": "2023-07-07T12:30:00.000Z",
+        "time_slot_end": "2023-07-07T13:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T13:00:00.000Z",
-        "time_slot_end": "2023-07-05T13:30:00.000Z"
+        "time_slot_start": "2023-07-07T13:00:00.000Z",
+        "time_slot_end": "2023-07-07T13:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T13:30:00.000Z",
-        "time_slot_end": "2023-07-05T14:00:00.000Z"
+        "time_slot_start": "2023-07-07T13:30:00.000Z",
+        "time_slot_end": "2023-07-07T14:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T14:00:00.000Z",
-        "time_slot_end": "2023-07-05T14:30:00.000Z"
+        "time_slot_start": "2023-07-07T14:00:00.000Z",
+        "time_slot_end": "2023-07-07T14:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T14:30:00.000Z",
-        "time_slot_end": "2023-07-05T15:00:00.000Z"
+        "time_slot_start": "2023-07-07T14:30:00.000Z",
+        "time_slot_end": "2023-07-07T15:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T15:00:00.000Z",
-        "time_slot_end": "2023-07-05T15:30:00.000Z"
+        "time_slot_start": "2023-07-07T15:00:00.000Z",
+        "time_slot_end": "2023-07-07T15:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T15:30:00.000Z",
-        "time_slot_end": "2023-07-05T16:00:00.000Z"
+        "time_slot_start": "2023-07-07T15:30:00.000Z",
+        "time_slot_end": "2023-07-07T16:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T16:00:00.000Z",
-        "time_slot_end": "2023-07-05T16:30:00.000Z"
+        "time_slot_start": "2023-07-07T16:00:00.000Z",
+        "time_slot_end": "2023-07-07T16:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T16:30:00.000Z",
-        "time_slot_end": "2023-07-05T17:00:00.000Z"
+        "time_slot_start": "2023-07-07T16:30:00.000Z",
+        "time_slot_end": "2023-07-07T17:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T17:00:00.000Z",
-        "time_slot_end": "2023-07-05T17:30:00.000Z"
+        "time_slot_start": "2023-07-07T17:00:00.000Z",
+        "time_slot_end": "2023-07-07T17:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T17:30:00.000Z",
-        "time_slot_end": "2023-07-05T18:00:00.000Z"
+        "time_slot_start": "2023-07-07T17:30:00.000Z",
+        "time_slot_end": "2023-07-07T18:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T18:00:00.000Z",
-        "time_slot_end": "2023-07-05T18:30:00.000Z"
+        "time_slot_start": "2023-07-07T18:00:00.000Z",
+        "time_slot_end": "2023-07-07T18:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T18:30:00.000Z",
-        "time_slot_end": "2023-07-05T19:00:00.000Z"
+        "time_slot_start": "2023-07-07T18:30:00.000Z",
+        "time_slot_end": "2023-07-07T19:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T19:00:00.000Z",
-        "time_slot_end": "2023-07-05T19:30:00.000Z"
+        "time_slot_start": "2023-07-07T19:00:00.000Z",
+        "time_slot_end": "2023-07-07T19:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T19:30:00.000Z",
-        "time_slot_end": "2023-07-05T20:00:00.000Z"
+        "time_slot_start": "2023-07-07T19:30:00.000Z",
+        "time_slot_end": "2023-07-07T20:00:00.000Z",
+        "is_available": true
       },
       {
-        "time_slot_start": "2023-07-05T20:00:00.000Z",
-        "time_slot_end": "2023-07-05T20:30:00.000Z"
+        "time_slot_start": "2023-07-07T20:00:00.000Z",
+        "time_slot_end": "2023-07-07T20:30:00.000Z",
+        "is_available": true
       },
       {
-        "time_slot_start": "2023-07-05T20:30:00.000Z",
-        "time_slot_end": "2023-07-05T21:00:00.000Z"
+        "time_slot_start": "2023-07-07T20:30:00.000Z",
+        "time_slot_end": "2023-07-07T21:00:00.000Z",
+        "is_available": true
       },
       {
-        "time_slot_start": "2023-07-05T21:00:00.000Z",
-        "time_slot_end": "2023-07-05T21:30:00.000Z"
+        "time_slot_start": "2023-07-07T21:00:00.000Z",
+        "time_slot_end": "2023-07-07T21:30:00.000Z",
+        "is_available": true
       },
       {
-        "time_slot_start": "2023-07-05T21:30:00.000Z",
-        "time_slot_end": "2023-07-04T22:00:00.000Z"
+        "time_slot_start": "2023-07-07T21:30:00.000Z",
+        "time_slot_end": "2023-07-06T22:00:00.000Z",
+        "is_available": true
       }
     ],
-    "parsed_at": "2023-07-04T16:01:43.456Z"
+    "parsed_at": "2023-07-07T19:33:20.824Z"
   },
   {
     "source_website": "https://mcarena-esslingen.de/reservations.php",
-    "court": "SWE-Arena",
-    "day": "2023-07-04T22:00:00.000Z",
+    "court": "McArena Esslingen/SWE-Arena",
+    "day": "2023-07-06T22:00:00.000Z",
     "results": [
       {
-        "time_slot_start": "2023-07-05T06:00:00.000Z",
-        "time_slot_end": "2023-07-05T06:30:00.000Z"
+        "time_slot_start": "2023-07-07T06:00:00.000Z",
+        "time_slot_end": "2023-07-07T06:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T06:30:00.000Z",
-        "time_slot_end": "2023-07-05T07:00:00.000Z"
+        "time_slot_start": "2023-07-07T06:30:00.000Z",
+        "time_slot_end": "2023-07-07T07:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T07:00:00.000Z",
-        "time_slot_end": "2023-07-05T07:30:00.000Z"
+        "time_slot_start": "2023-07-07T07:00:00.000Z",
+        "time_slot_end": "2023-07-07T07:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T07:30:00.000Z",
-        "time_slot_end": "2023-07-05T08:00:00.000Z"
+        "time_slot_start": "2023-07-07T07:30:00.000Z",
+        "time_slot_end": "2023-07-07T08:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T08:00:00.000Z",
-        "time_slot_end": "2023-07-05T08:30:00.000Z"
+        "time_slot_start": "2023-07-07T08:00:00.000Z",
+        "time_slot_end": "2023-07-07T08:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T08:30:00.000Z",
-        "time_slot_end": "2023-07-05T09:00:00.000Z"
+        "time_slot_start": "2023-07-07T08:30:00.000Z",
+        "time_slot_end": "2023-07-07T09:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T09:00:00.000Z",
-        "time_slot_end": "2023-07-05T09:30:00.000Z"
+        "time_slot_start": "2023-07-07T09:00:00.000Z",
+        "time_slot_end": "2023-07-07T09:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T09:30:00.000Z",
-        "time_slot_end": "2023-07-05T10:00:00.000Z"
+        "time_slot_start": "2023-07-07T09:30:00.000Z",
+        "time_slot_end": "2023-07-07T10:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T10:00:00.000Z",
-        "time_slot_end": "2023-07-05T10:30:00.000Z"
+        "time_slot_start": "2023-07-07T10:00:00.000Z",
+        "time_slot_end": "2023-07-07T10:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T10:30:00.000Z",
-        "time_slot_end": "2023-07-05T11:00:00.000Z"
+        "time_slot_start": "2023-07-07T10:30:00.000Z",
+        "time_slot_end": "2023-07-07T11:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T11:00:00.000Z",
-        "time_slot_end": "2023-07-05T11:30:00.000Z"
+        "time_slot_start": "2023-07-07T11:00:00.000Z",
+        "time_slot_end": "2023-07-07T11:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T11:30:00.000Z",
-        "time_slot_end": "2023-07-05T12:00:00.000Z"
+        "time_slot_start": "2023-07-07T11:30:00.000Z",
+        "time_slot_end": "2023-07-07T12:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T12:00:00.000Z",
-        "time_slot_end": "2023-07-05T12:30:00.000Z"
+        "time_slot_start": "2023-07-07T12:00:00.000Z",
+        "time_slot_end": "2023-07-07T12:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T12:30:00.000Z",
-        "time_slot_end": "2023-07-05T13:00:00.000Z"
+        "time_slot_start": "2023-07-07T12:30:00.000Z",
+        "time_slot_end": "2023-07-07T13:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T13:00:00.000Z",
-        "time_slot_end": "2023-07-05T13:30:00.000Z"
+        "time_slot_start": "2023-07-07T13:00:00.000Z",
+        "time_slot_end": "2023-07-07T13:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T13:30:00.000Z",
-        "time_slot_end": "2023-07-05T14:00:00.000Z"
+        "time_slot_start": "2023-07-07T13:30:00.000Z",
+        "time_slot_end": "2023-07-07T14:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T14:00:00.000Z",
-        "time_slot_end": "2023-07-05T14:30:00.000Z"
+        "time_slot_start": "2023-07-07T14:00:00.000Z",
+        "time_slot_end": "2023-07-07T14:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T14:30:00.000Z",
-        "time_slot_end": "2023-07-05T15:00:00.000Z"
+        "time_slot_start": "2023-07-07T14:30:00.000Z",
+        "time_slot_end": "2023-07-07T15:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T15:00:00.000Z",
-        "time_slot_end": "2023-07-05T15:30:00.000Z"
+        "time_slot_start": "2023-07-07T15:00:00.000Z",
+        "time_slot_end": "2023-07-07T15:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T15:30:00.000Z",
-        "time_slot_end": "2023-07-05T16:00:00.000Z"
+        "time_slot_start": "2023-07-07T15:30:00.000Z",
+        "time_slot_end": "2023-07-07T16:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T16:00:00.000Z",
-        "time_slot_end": "2023-07-05T16:30:00.000Z"
+        "time_slot_start": "2023-07-07T16:00:00.000Z",
+        "time_slot_end": "2023-07-07T16:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T16:30:00.000Z",
-        "time_slot_end": "2023-07-05T17:00:00.000Z"
+        "time_slot_start": "2023-07-07T16:30:00.000Z",
+        "time_slot_end": "2023-07-07T17:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T17:00:00.000Z",
-        "time_slot_end": "2023-07-05T17:30:00.000Z"
+        "time_slot_start": "2023-07-07T17:00:00.000Z",
+        "time_slot_end": "2023-07-07T17:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T17:30:00.000Z",
-        "time_slot_end": "2023-07-05T18:00:00.000Z"
+        "time_slot_start": "2023-07-07T17:30:00.000Z",
+        "time_slot_end": "2023-07-07T18:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T18:00:00.000Z",
-        "time_slot_end": "2023-07-05T18:30:00.000Z"
+        "time_slot_start": "2023-07-07T18:00:00.000Z",
+        "time_slot_end": "2023-07-07T18:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T18:30:00.000Z",
-        "time_slot_end": "2023-07-05T19:00:00.000Z"
+        "time_slot_start": "2023-07-07T18:30:00.000Z",
+        "time_slot_end": "2023-07-07T19:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T19:00:00.000Z",
-        "time_slot_end": "2023-07-05T19:30:00.000Z"
+        "time_slot_start": "2023-07-07T19:00:00.000Z",
+        "time_slot_end": "2023-07-07T19:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T19:30:00.000Z",
-        "time_slot_end": "2023-07-05T20:00:00.000Z"
+        "time_slot_start": "2023-07-07T19:30:00.000Z",
+        "time_slot_end": "2023-07-07T20:00:00.000Z",
+        "is_available": true
       }
     ],
-    "parsed_at": "2023-07-04T16:01:43.566Z"
+    "parsed_at": "2023-07-07T19:33:20.851Z"
   },
   {
     "source_website": "https://mcarena-esslingen.de/reservations.php",
-    "court": "Sparkassen-Arena",
-    "day": "2023-07-04T22:00:00.000Z",
+    "court": "McArena Esslingen/Sparkassen-Arena",
+    "day": "2023-07-06T22:00:00.000Z",
     "results": [
       {
-        "time_slot_start": "2023-07-05T06:00:00.000Z",
-        "time_slot_end": "2023-07-05T06:30:00.000Z"
+        "time_slot_start": "2023-07-07T06:00:00.000Z",
+        "time_slot_end": "2023-07-07T06:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T06:30:00.000Z",
-        "time_slot_end": "2023-07-05T07:00:00.000Z"
+        "time_slot_start": "2023-07-07T06:30:00.000Z",
+        "time_slot_end": "2023-07-07T07:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T07:00:00.000Z",
-        "time_slot_end": "2023-07-05T07:30:00.000Z"
+        "time_slot_start": "2023-07-07T07:00:00.000Z",
+        "time_slot_end": "2023-07-07T07:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T07:30:00.000Z",
-        "time_slot_end": "2023-07-05T08:00:00.000Z"
+        "time_slot_start": "2023-07-07T07:30:00.000Z",
+        "time_slot_end": "2023-07-07T08:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T08:00:00.000Z",
-        "time_slot_end": "2023-07-05T08:30:00.000Z"
+        "time_slot_start": "2023-07-07T08:00:00.000Z",
+        "time_slot_end": "2023-07-07T08:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T08:30:00.000Z",
-        "time_slot_end": "2023-07-05T09:00:00.000Z"
+        "time_slot_start": "2023-07-07T08:30:00.000Z",
+        "time_slot_end": "2023-07-07T09:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T09:00:00.000Z",
-        "time_slot_end": "2023-07-05T09:30:00.000Z"
+        "time_slot_start": "2023-07-07T09:00:00.000Z",
+        "time_slot_end": "2023-07-07T09:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T09:30:00.000Z",
-        "time_slot_end": "2023-07-05T10:00:00.000Z"
+        "time_slot_start": "2023-07-07T09:30:00.000Z",
+        "time_slot_end": "2023-07-07T10:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T10:00:00.000Z",
-        "time_slot_end": "2023-07-05T10:30:00.000Z"
+        "time_slot_start": "2023-07-07T10:00:00.000Z",
+        "time_slot_end": "2023-07-07T10:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T10:30:00.000Z",
-        "time_slot_end": "2023-07-05T11:00:00.000Z"
+        "time_slot_start": "2023-07-07T10:30:00.000Z",
+        "time_slot_end": "2023-07-07T11:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T11:00:00.000Z",
-        "time_slot_end": "2023-07-05T11:30:00.000Z"
+        "time_slot_start": "2023-07-07T11:00:00.000Z",
+        "time_slot_end": "2023-07-07T11:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T11:30:00.000Z",
-        "time_slot_end": "2023-07-05T12:00:00.000Z"
+        "time_slot_start": "2023-07-07T11:30:00.000Z",
+        "time_slot_end": "2023-07-07T12:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T12:00:00.000Z",
-        "time_slot_end": "2023-07-05T12:30:00.000Z"
+        "time_slot_start": "2023-07-07T12:00:00.000Z",
+        "time_slot_end": "2023-07-07T12:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T12:30:00.000Z",
-        "time_slot_end": "2023-07-05T13:00:00.000Z"
+        "time_slot_start": "2023-07-07T12:30:00.000Z",
+        "time_slot_end": "2023-07-07T13:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T13:00:00.000Z",
-        "time_slot_end": "2023-07-05T13:30:00.000Z"
+        "time_slot_start": "2023-07-07T13:00:00.000Z",
+        "time_slot_end": "2023-07-07T13:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T13:30:00.000Z",
-        "time_slot_end": "2023-07-05T14:00:00.000Z"
+        "time_slot_start": "2023-07-07T13:30:00.000Z",
+        "time_slot_end": "2023-07-07T14:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T14:00:00.000Z",
-        "time_slot_end": "2023-07-05T14:30:00.000Z"
+        "time_slot_start": "2023-07-07T14:00:00.000Z",
+        "time_slot_end": "2023-07-07T14:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T14:30:00.000Z",
-        "time_slot_end": "2023-07-05T15:00:00.000Z"
+        "time_slot_start": "2023-07-07T14:30:00.000Z",
+        "time_slot_end": "2023-07-07T15:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T15:00:00.000Z",
-        "time_slot_end": "2023-07-05T15:30:00.000Z"
+        "time_slot_start": "2023-07-07T15:00:00.000Z",
+        "time_slot_end": "2023-07-07T15:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T15:30:00.000Z",
-        "time_slot_end": "2023-07-05T16:00:00.000Z"
+        "time_slot_start": "2023-07-07T15:30:00.000Z",
+        "time_slot_end": "2023-07-07T16:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T16:00:00.000Z",
-        "time_slot_end": "2023-07-05T16:30:00.000Z"
+        "time_slot_start": "2023-07-07T16:00:00.000Z",
+        "time_slot_end": "2023-07-07T16:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T16:30:00.000Z",
-        "time_slot_end": "2023-07-05T17:00:00.000Z"
+        "time_slot_start": "2023-07-07T16:30:00.000Z",
+        "time_slot_end": "2023-07-07T17:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T17:00:00.000Z",
-        "time_slot_end": "2023-07-05T17:30:00.000Z"
+        "time_slot_start": "2023-07-07T17:00:00.000Z",
+        "time_slot_end": "2023-07-07T17:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T17:30:00.000Z",
-        "time_slot_end": "2023-07-05T18:00:00.000Z"
+        "time_slot_start": "2023-07-07T17:30:00.000Z",
+        "time_slot_end": "2023-07-07T18:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T18:00:00.000Z",
-        "time_slot_end": "2023-07-05T18:30:00.000Z"
+        "time_slot_start": "2023-07-07T18:00:00.000Z",
+        "time_slot_end": "2023-07-07T18:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T18:30:00.000Z",
-        "time_slot_end": "2023-07-05T19:00:00.000Z"
+        "time_slot_start": "2023-07-07T18:30:00.000Z",
+        "time_slot_end": "2023-07-07T19:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T19:00:00.000Z",
-        "time_slot_end": "2023-07-05T19:30:00.000Z"
+        "time_slot_start": "2023-07-07T19:00:00.000Z",
+        "time_slot_end": "2023-07-07T19:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T19:30:00.000Z",
-        "time_slot_end": "2023-07-05T20:00:00.000Z"
+        "time_slot_start": "2023-07-07T19:30:00.000Z",
+        "time_slot_end": "2023-07-07T20:00:00.000Z",
+        "is_available": true
       }
     ],
-    "parsed_at": "2023-07-04T16:01:43.572Z"
+    "parsed_at": "2023-07-07T19:33:20.854Z"
   },
   {
     "source_website": "https://ssl.forumedia.eu/mcarena-aspach.de/reservations.php",
-    "court": "Platz 1",
-    "day": "2023-07-04T22:00:00.000Z",
+    "court": "McArena Aspach/Platz 1",
+    "day": "2023-07-06T22:00:00.000Z",
     "results": [
       {
-        "time_slot_start": "2023-07-05T08:00:00.000Z",
-        "time_slot_end": "2023-07-05T08:30:00.000Z"
+        "time_slot_start": "2023-07-07T08:00:00.000Z",
+        "time_slot_end": "2023-07-07T08:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T08:30:00.000Z",
-        "time_slot_end": "2023-07-05T09:00:00.000Z"
+        "time_slot_start": "2023-07-07T08:30:00.000Z",
+        "time_slot_end": "2023-07-07T09:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T09:00:00.000Z",
-        "time_slot_end": "2023-07-05T09:30:00.000Z"
+        "time_slot_start": "2023-07-07T09:00:00.000Z",
+        "time_slot_end": "2023-07-07T09:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T09:30:00.000Z",
-        "time_slot_end": "2023-07-05T10:00:00.000Z"
+        "time_slot_start": "2023-07-07T09:30:00.000Z",
+        "time_slot_end": "2023-07-07T10:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T10:00:00.000Z",
-        "time_slot_end": "2023-07-05T10:30:00.000Z"
+        "time_slot_start": "2023-07-07T10:00:00.000Z",
+        "time_slot_end": "2023-07-07T10:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T10:30:00.000Z",
-        "time_slot_end": "2023-07-05T11:00:00.000Z"
+        "time_slot_start": "2023-07-07T10:30:00.000Z",
+        "time_slot_end": "2023-07-07T11:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T11:00:00.000Z",
-        "time_slot_end": "2023-07-05T11:30:00.000Z"
+        "time_slot_start": "2023-07-07T11:00:00.000Z",
+        "time_slot_end": "2023-07-07T11:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T11:30:00.000Z",
-        "time_slot_end": "2023-07-05T12:00:00.000Z"
+        "time_slot_start": "2023-07-07T11:30:00.000Z",
+        "time_slot_end": "2023-07-07T12:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T12:00:00.000Z",
-        "time_slot_end": "2023-07-05T12:30:00.000Z"
+        "time_slot_start": "2023-07-07T12:00:00.000Z",
+        "time_slot_end": "2023-07-07T12:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T12:30:00.000Z",
-        "time_slot_end": "2023-07-05T13:00:00.000Z"
+        "time_slot_start": "2023-07-07T12:30:00.000Z",
+        "time_slot_end": "2023-07-07T13:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T13:00:00.000Z",
-        "time_slot_end": "2023-07-05T13:30:00.000Z"
+        "time_slot_start": "2023-07-07T13:00:00.000Z",
+        "time_slot_end": "2023-07-07T13:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T13:30:00.000Z",
-        "time_slot_end": "2023-07-05T14:00:00.000Z"
+        "time_slot_start": "2023-07-07T13:30:00.000Z",
+        "time_slot_end": "2023-07-07T14:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T14:00:00.000Z",
-        "time_slot_end": "2023-07-05T14:30:00.000Z"
+        "time_slot_start": "2023-07-07T14:00:00.000Z",
+        "time_slot_end": "2023-07-07T14:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T14:30:00.000Z",
-        "time_slot_end": "2023-07-05T15:00:00.000Z"
+        "time_slot_start": "2023-07-07T14:30:00.000Z",
+        "time_slot_end": "2023-07-07T15:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T15:00:00.000Z",
-        "time_slot_end": "2023-07-05T15:30:00.000Z"
+        "time_slot_start": "2023-07-07T15:00:00.000Z",
+        "time_slot_end": "2023-07-07T15:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T15:30:00.000Z",
-        "time_slot_end": "2023-07-05T16:00:00.000Z"
+        "time_slot_start": "2023-07-07T15:30:00.000Z",
+        "time_slot_end": "2023-07-07T16:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T16:00:00.000Z",
-        "time_slot_end": "2023-07-05T16:30:00.000Z"
+        "time_slot_start": "2023-07-07T16:00:00.000Z",
+        "time_slot_end": "2023-07-07T16:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T16:30:00.000Z",
-        "time_slot_end": "2023-07-05T17:00:00.000Z"
+        "time_slot_start": "2023-07-07T16:30:00.000Z",
+        "time_slot_end": "2023-07-07T17:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T17:00:00.000Z",
-        "time_slot_end": "2023-07-05T17:30:00.000Z"
+        "time_slot_start": "2023-07-07T17:00:00.000Z",
+        "time_slot_end": "2023-07-07T17:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T17:30:00.000Z",
-        "time_slot_end": "2023-07-05T18:00:00.000Z"
+        "time_slot_start": "2023-07-07T17:30:00.000Z",
+        "time_slot_end": "2023-07-07T18:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T18:00:00.000Z",
-        "time_slot_end": "2023-07-05T18:30:00.000Z"
+        "time_slot_start": "2023-07-07T18:00:00.000Z",
+        "time_slot_end": "2023-07-07T18:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T18:30:00.000Z",
-        "time_slot_end": "2023-07-05T19:00:00.000Z"
+        "time_slot_start": "2023-07-07T18:30:00.000Z",
+        "time_slot_end": "2023-07-07T19:00:00.000Z",
+        "is_available": false
       }
     ],
-    "parsed_at": "2023-07-04T16:01:43.381Z"
+    "parsed_at": "2023-07-07T19:33:20.786Z"
   },
   {
     "source_website": "https://www.mcarena-auenstein.de/reservations.php",
-    "court": "Arena",
-    "day": "2023-07-04T22:00:00.000Z",
+    "court": "McArena Auenstein/Arena",
+    "day": "2023-07-06T22:00:00.000Z",
     "results": [
       {
-        "time_slot_start": "2023-07-05T06:00:00.000Z",
-        "time_slot_end": "2023-07-05T06:30:00.000Z"
+        "time_slot_start": "2023-07-07T06:00:00.000Z",
+        "time_slot_end": "2023-07-07T06:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T06:30:00.000Z",
-        "time_slot_end": "2023-07-05T07:00:00.000Z"
+        "time_slot_start": "2023-07-07T06:30:00.000Z",
+        "time_slot_end": "2023-07-07T07:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T07:00:00.000Z",
-        "time_slot_end": "2023-07-05T07:30:00.000Z"
+        "time_slot_start": "2023-07-07T07:00:00.000Z",
+        "time_slot_end": "2023-07-07T07:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T07:30:00.000Z",
-        "time_slot_end": "2023-07-05T08:00:00.000Z"
+        "time_slot_start": "2023-07-07T07:30:00.000Z",
+        "time_slot_end": "2023-07-07T08:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T08:00:00.000Z",
-        "time_slot_end": "2023-07-05T08:30:00.000Z"
+        "time_slot_start": "2023-07-07T08:00:00.000Z",
+        "time_slot_end": "2023-07-07T08:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T08:30:00.000Z",
-        "time_slot_end": "2023-07-05T09:00:00.000Z"
+        "time_slot_start": "2023-07-07T08:30:00.000Z",
+        "time_slot_end": "2023-07-07T09:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T09:00:00.000Z",
-        "time_slot_end": "2023-07-05T09:30:00.000Z"
+        "time_slot_start": "2023-07-07T09:00:00.000Z",
+        "time_slot_end": "2023-07-07T09:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T09:30:00.000Z",
-        "time_slot_end": "2023-07-05T10:00:00.000Z"
+        "time_slot_start": "2023-07-07T09:30:00.000Z",
+        "time_slot_end": "2023-07-07T10:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T10:00:00.000Z",
-        "time_slot_end": "2023-07-05T10:30:00.000Z"
+        "time_slot_start": "2023-07-07T10:00:00.000Z",
+        "time_slot_end": "2023-07-07T10:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T10:30:00.000Z",
-        "time_slot_end": "2023-07-05T11:00:00.000Z"
+        "time_slot_start": "2023-07-07T10:30:00.000Z",
+        "time_slot_end": "2023-07-07T11:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T11:00:00.000Z",
-        "time_slot_end": "2023-07-05T11:30:00.000Z"
+        "time_slot_start": "2023-07-07T11:00:00.000Z",
+        "time_slot_end": "2023-07-07T11:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T11:30:00.000Z",
-        "time_slot_end": "2023-07-05T12:00:00.000Z"
+        "time_slot_start": "2023-07-07T11:30:00.000Z",
+        "time_slot_end": "2023-07-07T12:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T12:00:00.000Z",
-        "time_slot_end": "2023-07-05T12:30:00.000Z"
+        "time_slot_start": "2023-07-07T12:00:00.000Z",
+        "time_slot_end": "2023-07-07T12:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T12:30:00.000Z",
-        "time_slot_end": "2023-07-05T13:00:00.000Z"
+        "time_slot_start": "2023-07-07T12:30:00.000Z",
+        "time_slot_end": "2023-07-07T13:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T13:00:00.000Z",
-        "time_slot_end": "2023-07-05T13:30:00.000Z"
+        "time_slot_start": "2023-07-07T13:00:00.000Z",
+        "time_slot_end": "2023-07-07T13:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T13:30:00.000Z",
-        "time_slot_end": "2023-07-05T14:00:00.000Z"
+        "time_slot_start": "2023-07-07T13:30:00.000Z",
+        "time_slot_end": "2023-07-07T14:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T14:00:00.000Z",
-        "time_slot_end": "2023-07-05T14:30:00.000Z"
+        "time_slot_start": "2023-07-07T14:00:00.000Z",
+        "time_slot_end": "2023-07-07T14:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T14:30:00.000Z",
-        "time_slot_end": "2023-07-05T15:00:00.000Z"
+        "time_slot_start": "2023-07-07T14:30:00.000Z",
+        "time_slot_end": "2023-07-07T15:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T15:00:00.000Z",
-        "time_slot_end": "2023-07-05T15:30:00.000Z"
+        "time_slot_start": "2023-07-07T15:00:00.000Z",
+        "time_slot_end": "2023-07-07T15:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T15:30:00.000Z",
-        "time_slot_end": "2023-07-05T16:00:00.000Z"
+        "time_slot_start": "2023-07-07T15:30:00.000Z",
+        "time_slot_end": "2023-07-07T16:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T16:00:00.000Z",
-        "time_slot_end": "2023-07-05T16:30:00.000Z"
+        "time_slot_start": "2023-07-07T16:00:00.000Z",
+        "time_slot_end": "2023-07-07T16:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T16:30:00.000Z",
-        "time_slot_end": "2023-07-05T17:00:00.000Z"
+        "time_slot_start": "2023-07-07T16:30:00.000Z",
+        "time_slot_end": "2023-07-07T17:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T17:00:00.000Z",
-        "time_slot_end": "2023-07-05T17:30:00.000Z"
+        "time_slot_start": "2023-07-07T17:00:00.000Z",
+        "time_slot_end": "2023-07-07T17:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T17:30:00.000Z",
-        "time_slot_end": "2023-07-05T18:00:00.000Z"
+        "time_slot_start": "2023-07-07T17:30:00.000Z",
+        "time_slot_end": "2023-07-07T18:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T18:00:00.000Z",
-        "time_slot_end": "2023-07-05T18:30:00.000Z"
+        "time_slot_start": "2023-07-07T18:00:00.000Z",
+        "time_slot_end": "2023-07-07T18:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T18:30:00.000Z",
-        "time_slot_end": "2023-07-05T19:00:00.000Z"
+        "time_slot_start": "2023-07-07T18:30:00.000Z",
+        "time_slot_end": "2023-07-07T19:00:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T19:00:00.000Z",
-        "time_slot_end": "2023-07-05T19:30:00.000Z"
+        "time_slot_start": "2023-07-07T19:00:00.000Z",
+        "time_slot_end": "2023-07-07T19:30:00.000Z",
+        "is_available": false
       },
       {
-        "time_slot_start": "2023-07-05T19:30:00.000Z",
-        "time_slot_end": "2023-07-05T20:00:00.000Z"
+        "time_slot_start": "2023-07-07T19:30:00.000Z",
+        "time_slot_end": "2023-07-07T20:00:00.000Z",
+        "is_available": false
       }
     ],
-    "parsed_at": "2023-07-04T16:01:43.513Z"
+    "parsed_at": "2023-07-07T19:33:20.872Z"
   }
 ]
