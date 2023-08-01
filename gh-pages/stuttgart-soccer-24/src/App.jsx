@@ -2,9 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import data from './scraped/data.json';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -19,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div >
+      <div>
         <h1>Stuttgart Soccer 24 <SportsSoccerIcon color="primary" fontSize="large" /></h1>
         <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
           <MultiSelectDropdown
@@ -40,14 +38,14 @@ export default App
 
 function AutoGrid({ selectedOptions }) {
   return (
-    <Box>
+    <Box style={{ minWidth: "100%" }}>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {data.map((court_info) => {
           if (selectedOptions.length > 0 && !selectedOptions.includes(court_info.court))
             return null;
           // only create grids for the available slots
           return court_info.results.filter(time_slot => time_slot.is_available).map((time_slot, idx) => {
-            return <Grid xs={3} key={idx}>
+            return <div key={idx} style={{ margin: "10px" }}>
               <BasicCard
                 source_website={court_info.source_website}
                 court={court_info.court}
@@ -55,7 +53,7 @@ function AutoGrid({ selectedOptions }) {
                 time_slot_end={time_slot.time_slot_end}
                 is_available={true}
               />
-            </Grid>;
+            </div>;
           })
 
         })}
@@ -77,14 +75,14 @@ function BasicCard({
   const duration = moment.duration(dateEnd.diff(dateStart));
   const datePart = moment(time_slot_start).format("DD MMM");
   return (
-    <a href={source_website} target="_blank" rel="noreferrer">
+    <a href={source_website} target="_blank" rel="noreferrer" style={{ display: "block" }}>
       <Card sx={{
-        minWidth: 275, background: "#eee", ':hover': {
+        minWidth: 275, width: 275, background: "#eee", ':hover': {
           background: "white", // theme.shadows[20]
         },
       }} >
         <CardContent style={{ paddingBottom: "0px" }}>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          <Typography sx={{ fontSize: 14 }} color="text.secondary" style={{ wordWrap: "break-word" }} gutterBottom>
             {court}
           </Typography>
           <Typography color="text.secondary" >{datePart}</Typography>
