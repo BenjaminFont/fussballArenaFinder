@@ -1,6 +1,6 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
-import moment from "moment";
+import moment from "moment-timezone";
 import { ArenaEntry, TimeSlot } from "../common.js";
 
 
@@ -35,7 +35,12 @@ async function parse(data, endpoint_url, requested_date) {
         const is_available = ($(row).find("td").first().attr("class") === "available");
         const time_slots = time_slot_str
           .split(" - ", 2)
-          .map((value) => moment(`${requested_date.format("YYYY-MM-DD")} ${value}`, "YYYY-MM-DD hh:mm"));
+          .map((value) => {
+            const dayOfSlot = value === "00:00" ? requested_date.clone().add(1, "DAYS") : requested_date;
+            const time = moment.tz(
+              `${dayOfSlot.format("YYYY-MM-DD")} ${value}`, "YYYY-MM-DD hh:mm", "Europe/Berlin");
+            return time;
+          });
         return new TimeSlot(time_slots[0], time_slots[1], is_available);
       })
       .filter((availability) => availability !== undefined)
