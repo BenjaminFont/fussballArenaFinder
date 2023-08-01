@@ -11,7 +11,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import moment from 'moment';
 import MultiSelectDropdown from './components/dropdown.jsx'
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
-
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 function App() {
   // State variable to hold the selected options
@@ -71,20 +71,34 @@ function BasicCard({
   time_slot_end,
   is_available,
 }) {
-  const displayFormat = "DD MMM HH:mm"
+  const displayFormat = "HH:mm";
+  const dateStart = moment(time_slot_start);
+  const dateEnd = moment(time_slot_end);
+  const duration = moment.duration(dateEnd.diff(dateStart));
+  const datePart = moment(time_slot_start).format("DD MMM");
   return (
-    <Card sx={{ minWidth: 275 }}>
-      <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          {court}
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          {moment(time_slot_start).format(displayFormat)} to {moment(time_slot_end).format(displayFormat)}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small" href={source_website}>Go to website</Button>
-      </CardActions>
-    </Card>
+    <a href={source_website} target="_blank" rel="noreferrer">
+      <Card sx={{
+        minWidth: 275, background: "#eee", ':hover': {
+          background: "white", // theme.shadows[20]
+        },
+      }} >
+        <CardContent style={{ paddingBottom: "0px" }}>
+          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+            {court}
+          </Typography>
+          <Typography color="text.secondary" >{datePart}</Typography>
+          <Typography sx={{ mb: 1.5, fontSize: 20 }} color="text.secondary">
+            {dateStart.format(displayFormat)}
+          </Typography>
+          <div style={{ display: "flex" }}>
+            <AccessTimeIcon color="text.secondary" fontSize="small" style={{ marginLeft: "auto" }} />
+            <Typography sx={{ mb: 1.5, fontSize: 16, textAlign: "right" }} >
+              {duration.asMinutes()}m
+            </Typography>
+          </div>
+        </CardContent>
+      </Card>
+    </a>
   );
 }
