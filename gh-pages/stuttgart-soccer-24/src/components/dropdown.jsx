@@ -21,22 +21,11 @@ const MultiSelectDropdown = ({ options, selectedOptions, onOptionSelect }) => {
   const DropdownFormControl = styled(FormControl)({
     minWidth: 200,
     marginBottom: '16px',
-    color: 'primary.main',
-  });
-
-  const DropdownInput = styled(Input)({
-    color: 'primary.main',
   });
 
   const DropdownChip = styled(Chip)({
-    color: 'inherit',
-    backgroundColor: 'primary.main',
     marginRight: '8px',
     marginBottom: '8px',
-  });
-
-  const DropdownIcon = styled(CancelIcon)({
-    color: 'inherit',
   });
 
   return (
@@ -46,16 +35,17 @@ const MultiSelectDropdown = ({ options, selectedOptions, onOptionSelect }) => {
         multiple
         value={selectedValues}
         onChange={handleOptionSelect}
-        input={<DropdownInput />}
+        input={<Input />}
         renderValue={(selected) => (
           <div>
             {selected.map((value) => (
               <DropdownChip
+                color="info"
                 key={value}
                 label={value}
                 onMouseDown={(event) => event.stopPropagation()}
                 onDelete={() => handleOptionRemove(value)}
-                deleteIcon={<DropdownIcon />}
+                deleteIcon={<CancelIcon />}
               />
             ))}
           </div>

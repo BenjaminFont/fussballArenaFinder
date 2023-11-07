@@ -72,3 +72,22 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/*
+  TODO: this is a workaround because dark mode seems very buggy with mui components.
+  Remove once the mui integration/palette is looking good.
+*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
