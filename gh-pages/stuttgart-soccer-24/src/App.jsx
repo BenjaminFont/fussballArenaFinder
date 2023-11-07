@@ -1,10 +1,15 @@
 import { useState } from 'react';
 import './App.css';
-import data from './scraped/data.json';
+// import dynamically generated files
+import data_today from './scraped/data_today.json';
+import data_tomorrow from './scraped/data_tomorrow.json';
+import data_overmorrow from './scraped/data_overmorrow.json';
 import MultiSelectDropdown from './components/dropdown.jsx'
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import TabComponent from './components/tab';
 import { AutoGrid } from './components/grid';
+
+const data = data_today.concat(data_tomorrow).concat(data_overmorrow);
 
 function App() {
   // State variable to hold the selected options
@@ -29,7 +34,7 @@ function App() {
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <TabComponent onTabChange={setSelectedDay} />
           <MultiSelectDropdown
-            options={data.map(e => e.court)}
+            options={data.map(e => e.court).filter((value, index, array) => array.indexOf(value) === index)}
             selectedOptions={selectedOptions}
             onOptionSelect={(selected) => {
               setSelectedOptions(selected);

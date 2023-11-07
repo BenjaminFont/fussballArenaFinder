@@ -46,8 +46,8 @@ function BasicCard({
   return (
     <a href={source_website} target="_blank" rel="noreferrer" style={{ display: "block" }}>
       <Card sx={{
-        minWidth: 275, width: 275, background: "#eee", ':hover': {
-          background: "white",
+        minWidth: 275, width: 275, background: "#c6c6c685", ':hover': {
+          background: "#e3e3e385",
         },
       }} >
         <CardContent style={{ paddingBottom: "0px" }}>
