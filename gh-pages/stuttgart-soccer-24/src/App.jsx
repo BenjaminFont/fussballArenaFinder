@@ -8,6 +8,8 @@ import MultiSelectDropdown from './components/dropdown.jsx'
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import TabComponent from './components/tab';
 import { AutoGrid } from './components/grid';
+import Typography from '@mui/material/Typography';
+import moment from 'moment';
 
 const data = data_today.concat(data_tomorrow).concat(data_overmorrow);
 
@@ -26,11 +28,15 @@ function App() {
     ),
   })
   )
+  // get one of the dates from courts
+  const parsedAt = moment(courtsFiltered[0].parsed_at);
+  const duration = moment.duration(moment().diff(parsedAt));
 
   return (
     <>
       <div>
-        <h1>Stuttgart Soccer 24 <SportsSoccerIcon color="primary" fontSize="large" /></h1>
+        <h1 style={{ marginBottom: "1rem" }} >Stuttgart Soccer 24 <SportsSoccerIcon color="primary" fontSize="large" /></h1>
+        <Typography style={{ color: "dark" }} >Last updated {Math.round(duration.asMinutes())} minutes ago</Typography>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <TabComponent onTabChange={setSelectedDay} />
           <MultiSelectDropdown

@@ -64,7 +64,11 @@ export async function scrape(requested_date) {
   let results = await Promise.all(courts_metadata.map(async court_meta => {
     const response = await retrieve(court_meta.url, requested_date);
     let parsed = await parse(response.data, court_meta.url, requested_date);
-    parsed.map(entry => { entry.court = `${court_meta.name}/${entry.court}` })
+    parsed.map(entry => {
+      // fill in the court url so the user can be redirected directly to the correct page
+      entry.source_website = `${response.request.protocol}//${response.request.host}${response.request.path}`;
+      entry.court = `${court_meta.name}/${entry.court}`
+    })
     return parsed;
   }));
   return results.flat(1);
