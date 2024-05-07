@@ -32,7 +32,20 @@ http://www.hallofsoccer.de/
 
 Contributions are welcome, just submit a pull request.
 
+## Local development
+
+### Backend
+
+    npm i
+
+    node index.js
+
+### Frontend
+
+    npm i
+
+    npm run dev
+
 # About
 
 This project was first suggested in [Hackergarten Stuttgart](https://www.meetup.com/hackergarten-stuttgart/events/292448297/).
-
