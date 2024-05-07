@@ -25,7 +25,7 @@ export async function retrieveAvailableSlots(requested_date) {
   const {slots: bookedSlots} = await response.json()
 
   const bookedSlotsToday = bookedSlots.filter(slot => slot.date === `${requested_date.format('YYYY-MM-DD')}`)
-  const numberOfCourts = Object.keys(groupBy(bookedSlotsToday, slot => slot.court)).length
+  const numberOfCourts = 4
   const bookedSlotsTodayByStartTime = groupBy(bookedSlotsToday, slot => slot.start)
 
   const timesWhenNoCourtIsAvailable = Object.entries(bookedSlotsTodayByStartTime).map(([startTime, slot]) => {
@@ -37,8 +37,12 @@ export async function retrieveAvailableSlots(requested_date) {
     !timesWhenNoCourtIsAvailable.includes(i) && timesWhenACourtIsAvailable.push(i);
   }
 
-  const availabilities = timesWhenACourtIsAvailable.map(timeWhenACourtIsAvailable => {
-    return new TimeSlot(moment(requested_date).set({hours: timeWhenACourtIsAvailable}),moment(requested_date).set({hours: timeWhenACourtIsAvailable}).add(1, 'hours'), true)
+  const dateTimesWhenACourtIsAvailable = timesWhenACourtIsAvailable
+    .map(time => moment(requested_date).tz('europe/berlin').set({hours: time}))
+    .filter((time) => time.isAfter())
+
+  const availabilities = dateTimesWhenACourtIsAvailable.map(dateTimeWhenACourtIsAvailable => {
+    return new TimeSlot(dateTimeWhenACourtIsAvailable, moment(dateTimeWhenACourtIsAvailable).add(1, 'hours'), true)
   })
 
   return new ArenaEntry(court_meta.url, 'Hall of soccer', requested_date, availabilities, moment())
