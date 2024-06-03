@@ -1,5 +1,5 @@
 <template>
-    <div class="card-wrapper col-1 col-md-2 col-md-3 col-lg-4 col-xl-3">
+    <div class="card-wrapper col-1 col-md-2 col-md-3 col-lg-4 col-xl-3" v-on:click="redirectToUrl">
         <div class="title">{{data.court}}</div>
         <div class="pre-title">{{data.datePart}}</div>
         <div class="description">{{data.dateStart}}</div>
@@ -15,5 +15,10 @@
                 required: true
             },
         },
+        methods: {
+            redirectToUrl: function () {
+                window.open(this.data.source_website, '_blank');
+            }
+        }
     }
 </script>
