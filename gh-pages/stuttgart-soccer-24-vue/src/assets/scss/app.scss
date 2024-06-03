@@ -1,0 +1,15 @@
+// Variables
+@import 'variables';
+
+// Main
+@import "main";
+
+// Header
+@import "header";
+
+// Tabs
+@import "tabs";
+
+body {
+  font-family: $font-family-sans-serif;
+}

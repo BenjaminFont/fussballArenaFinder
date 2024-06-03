@@ -1,11 +1,13 @@
 <template>
     <div class="tabs-filter">
         <div
+                class="tab"
                 v-on:click="addOption('')"
                 v-bind:class="{selected: this.filter === ''}">
             NO FILTER
         </div>
         <div
+                class="tab"
                 v-for="(item, index) in data"
                 v-on:click="addOption(item.value)"
                 v-bind:class="{selected: this.filter === item.value}">
