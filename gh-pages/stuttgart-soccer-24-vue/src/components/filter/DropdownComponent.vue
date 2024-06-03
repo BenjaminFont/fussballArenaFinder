@@ -4,6 +4,7 @@
                 style="min-height: 42px!important;min-width: 200px;max-width: 500px;"
                 class=""
                 mode="tags"
+                placeholder="Filter Courts"
                 :close-on-select="false"
                 :searchable="true"
                 :create-option="true"
