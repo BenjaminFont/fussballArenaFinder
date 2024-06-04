@@ -17,7 +17,7 @@
         },
         methods: {
             redirectToUrl: function () {
-                window.open(this.data.source_website, '_blank');
+                window.open(this.data.sourceWebsite, '_blank');
             }
         }
     }

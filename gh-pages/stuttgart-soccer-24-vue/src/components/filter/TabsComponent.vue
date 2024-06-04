@@ -22,9 +22,6 @@
             data: {
                 type: Array,
                 required: true
-            },
-            withoutFilter: {
-                type: String,
             }
         },
         data() {
@@ -36,11 +33,6 @@
             addOption: function (option) {
                 this.filter = option;
                 this.$emit("dateOption", option);
-            }
-        },
-        watch: {
-            withoutFilter: function (val, oldVal) {
-                this.filter = this.withoutFilter;
             }
         }
     }

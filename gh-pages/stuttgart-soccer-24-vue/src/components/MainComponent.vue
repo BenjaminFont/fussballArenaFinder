@@ -3,9 +3,8 @@
         <div class="main-wrapper">
             <header-component></header-component>
             <div class="filters-container">
-                <tabs-component :data="tabs" :without-filter="withoutFilter"
-                                @dateOption="filterDataByDate"></tabs-component>
-                <dropdown-component :data="courts" @options="filterDataByCourts"></dropdown-component>
+                <tabs-component :data="tabs" @dateOption="filterDataByDateCallback"></tabs-component>
+                <dropdown-component :data="courts" @options="filterDataByCourtsCallback"></dropdown-component>
             </div>
             <cards-component :data="data"></cards-component>
         </div>
@@ -15,7 +14,9 @@
 <style src="@vueform/multiselect/themes/default.css"></style>
 
 <script>
-    import data from "./../../data.json";
+    import data from "../scraped/data_today.json"
+    import dataTomorrow from "../scraped/data_tomorrow.json"
+    import dataOvermorrow from "../scraped/data_overmorrow.json"
     import moment from "moment";
     import HeaderComponent from "./layout/HeaderComponent.vue";
     import TabsComponent from "./filter/TabsComponent.vue";
@@ -31,6 +32,7 @@
         },
         data() {
             return {
+                initialData: [],
                 data: data,
                 courts: [],
                 tabs: [
@@ -47,33 +49,53 @@
                         value: moment().add(2, 'days').format('DD MMM'),
                     }
                 ],
-                withoutFilter: '',
+                courtFilter: [],
+                dateFilter: ""
             }
         },
         mounted() {
+            this.resetData();
             this.getCourts();
-            this.setDate();
+            this.transform();
         },
         methods: {
-            setDate() {
-                this.data = data;
-                for (let i in data) {
-                    this.data[i].dateStart = moment(this.data[i].time_slot_start).format("HH:mm");
-                    this.data[i].dateEnd = moment(this.data[i].time_slot_end);
-                    this.data[i].duration = moment.duration(this.data[i].dateEnd.diff(this.data[i].time_slot_start)).asMinutes();
-                    this.data[i].datePart = moment(this.data[i].time_slot_start).format("DD MMM");
-                }
-            },
-            getCourts: function () {
-                for (let i in data) {
-                    if (!this.courts.includes(data[i].court)) {
-                        this.courts.push(data[i].court)
+            resetData() {
+                this.initialData = []
+                const dataJoined = data.concat(dataTomorrow).concat(dataOvermorrow);
+                for (let i in dataJoined) {
+                    for (let j in dataJoined[i].results) {
+                        const entry = dataJoined[i].results[j];
+                        const dateStart =  moment(entry.time_slot_start);
+                        const dateEnd = moment(entry.time_slot_end);
+                        this.initialData.push({
+                            dateStart: dateStart.format("HH:mm"),
+                            dateEnd: dateEnd.format("HH:mm"),
+                            duration: moment.duration(dateEnd.diff(dateStart)).asMinutes(),
+                            court: dataJoined[i].court,
+                            datePart: moment(dataJoined[i].day).format("DD MMM"),
+                            sourceWebsite: dataJoined[i].source_website
+                        });
                     }
                 }
             },
+            transform() {
+                this.data = this.initialData;
+                this.filterDataByCourts(this.courtFilter);
+                this.filterDataByDate(this.dateFilter);
+            },
+            getCourts: function () {
+                for (let i in this.initialData) {
+                    if (!this.courts.includes(this.initialData[i].court)) {
+                        this.courts.push(this.initialData[i].court)
+                    }
+                }
+            },
+            filterDataByCourtsCallback: function(options) {
+                this.courtFilter = options;
+                this.transform();
+            },
             filterDataByCourts: function (options) {
-                this.setDate();
-                if (options.length > 0) {
+                if (this.courtFilter.length > 0) {
                     this.data = this.data.filter(item => {
                         let value = '';
                         for (let i in options) {
@@ -83,17 +105,17 @@
                         }
                         return value === item.court
                     })
-                    this.withoutFilter = '';
                 }
             },
+            filterDataByDateCallback: function (option) {
+                this.dateFilter = option;
+                this.transform();
+            },
             filterDataByDate: function (option) {
-                if (option !== '') {
-                    this.setDate();
+                if (this.dateFilter !== '') {
                     this.data = this.data.filter(item => {
                         return option === item.datePart
                     })
-                } else {
-                    this.setDate();
                 }
             }
         }
