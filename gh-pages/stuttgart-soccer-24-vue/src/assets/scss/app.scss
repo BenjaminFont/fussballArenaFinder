@@ -1,0 +1,21 @@
+// Variables
+@import 'variables';
+
+// Main
+@import "main";
+
+// Header
+@import "header";
+
+// Tabs
+@import "tabs";
+
+// Cards
+@import "cards";
+
+// Dropdown
+@import "dropdown";
+
+body {
+  font-family: $font-family-sans-serif;
+}

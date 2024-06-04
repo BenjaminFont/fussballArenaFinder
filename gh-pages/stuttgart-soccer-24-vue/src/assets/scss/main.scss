@@ -1,0 +1,13 @@
+#main {
+  display: flex;
+  justify-content: center;
+  .main-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    .filters-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 0;
+    }
+  }
+}
