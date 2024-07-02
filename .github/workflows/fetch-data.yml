@@ -30,18 +30,18 @@ jobs:
 
     - name: Install react dependencies
       run: npm install
-      working-directory: gh-pages/stuttgart-soccer-24
+      working-directory: gh-pages/stuttgart-soccer-24-vue
 
     - name: Build Frontend
       run: | 
         npm run build
-      working-directory: gh-pages/stuttgart-soccer-24
+      working-directory: gh-pages/stuttgart-soccer-24-vue
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
-        publish_dir: gh-pages/stuttgart-soccer-24/dist
+        publish_dir: gh-pages/stuttgart-soccer-24-vue/dist
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
