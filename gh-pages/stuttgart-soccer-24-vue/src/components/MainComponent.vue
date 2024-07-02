@@ -70,14 +70,16 @@
                         const entry = dataJoined[i].results[j];
                         const dateStart =  moment(entry.time_slot_start);
                         const dateEnd = moment(entry.time_slot_end);
-                        this.initialData.push({
-                            dateStart: dateStart.format("HH:mm"),
-                            dateEnd: dateEnd.format("HH:mm"),
-                            duration: moment.duration(dateEnd.diff(dateStart)).asMinutes(),
-                            court: dataJoined[i].court,
-                            datePart: moment(dataJoined[i].day).format("DD MMM"),
-                            sourceWebsite: dataJoined[i].source_website
-                        });
+                        if (entry.is_available) {
+                            this.initialData.push({
+                                dateStart: dateStart.format("HH:mm"),
+                                dateEnd: dateEnd.format("HH:mm"),
+                                duration: moment.duration(dateEnd.diff(dateStart)).asMinutes(),
+                                court: dataJoined[i].court,
+                                datePart: moment(dataJoined[i].day).format("DD MMM"),
+                                sourceWebsite: dataJoined[i].source_website
+                            });
+                        }
                     }
                 }
             },
