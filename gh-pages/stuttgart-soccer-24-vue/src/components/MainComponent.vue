@@ -2,6 +2,7 @@
     <div id="main" class="w-100">
         <div class="main-wrapper">
             <header-component></header-component>
+            <span v-if="parsedAt !== ''">Last updated {{Math.round(parsedAt.asMinutes())}} minutes ago</span>
             <div class="filters-container">
                 <tabs-component :data="tabs" @dateOption="filterDataByDateCallback"></tabs-component>
                 <dropdown-component :data="courts" @options="filterDataByCourtsCallback"></dropdown-component>
@@ -35,6 +36,7 @@
                 initialData: [],
                 data: data,
                 courts: [],
+                parsedAt: '',
                 tabs: [
                     {
                         name: 'TODAY',
@@ -57,6 +59,7 @@
             this.resetData();
             this.getCourts();
             this.transform();
+            this.setParsedAt();
         },
         methods: {
             resetData() {
@@ -117,6 +120,9 @@
                         return option === item.datePart
                     })
                 }
+            },
+            setParsedAt: function () {
+                this.parsedAt = moment.duration(moment().diff(data[0].parsed_at));
             }
         }
     }
