@@ -26,7 +26,7 @@ export function writeToFile(availabilities, filename) {
   // find relative path, in case script is executed from different directory
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
-  const relativePath = path.join(__dirname, '..', `gh-pages/stuttgart-soccer-24/src/scraped/${filename}.json`);
+  const relativePath = path.join(__dirname, '..', `gh-pages/stuttgart-soccer-24-vue/src/scraped/${filename}.json`);
   // export to file
   const jsonStr = JSON.stringify(availabilities, null, 2);
   fs.writeFileSync(
