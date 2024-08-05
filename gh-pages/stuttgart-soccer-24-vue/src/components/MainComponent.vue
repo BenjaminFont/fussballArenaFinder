@@ -3,6 +3,11 @@
         <div class="main-wrapper">
             <header-component></header-component>
             <span v-if="parsedAt !== ''">Last updated {{Math.round(parsedAt.asMinutes())}} minutes ago</span>
+            <div
+                    v-on:click="viewAllCards"
+                    class="viewAllLink">
+                {{viewAllText}}
+            </div>
             <div class="filters-container">
                 <tabs-component :data="tabs" @dateOption="filterDataByDateCallback"></tabs-component>
                 <dropdown-component :data="courts" @options="filterDataByCourtsCallback"></dropdown-component>
@@ -52,7 +57,9 @@
                     }
                 ],
                 courtFilter: [],
-                dateFilter: ""
+                dateFilter: "",
+                viewAll: false,
+                viewAllText: 'View All'
             }
         },
         mounted() {
@@ -62,7 +69,7 @@
             this.setParsedAt();
         },
         methods: {
-            resetData() {
+            resetData(viewAll = false) {
                 this.initialData = []
                 const dataJoined = data.concat(dataTomorrow).concat(dataOvermorrow);
                 for (let i in dataJoined) {
@@ -70,15 +77,31 @@
                         const entry = dataJoined[i].results[j];
                         const dateStart =  moment(entry.time_slot_start);
                         const dateEnd = moment(entry.time_slot_end);
-                        if (entry.is_available) {
-                            this.initialData.push({
-                                dateStart: dateStart.format("HH:mm"),
-                                dateEnd: dateEnd.format("HH:mm"),
-                                duration: moment.duration(dateEnd.diff(dateStart)).asMinutes(),
-                                court: dataJoined[i].court,
-                                datePart: moment(dataJoined[i].day).format("DD MMM"),
-                                sourceWebsite: dataJoined[i].source_website
-                            });
+                        switch (viewAll) {
+                            case false:
+                                if (entry.is_available) {
+                                    this.initialData.push({
+                                        dateStart: dateStart.format("HH:mm"),
+                                        dateEnd: dateEnd.format("HH:mm"),
+                                        duration: moment.duration(dateEnd.diff(dateStart)).asMinutes(),
+                                        court: dataJoined[i].court,
+                                        datePart: moment(dataJoined[i].day).format("DD MMM"),
+                                        sourceWebsite: dataJoined[i].source_website,
+                                        availableCard: true,
+                                    });
+                                }
+                                break;
+                            case true:
+                                this.initialData.push({
+                                    dateStart: dateStart.format("HH:mm"),
+                                    dateEnd: dateEnd.format("HH:mm"),
+                                    duration: moment.duration(dateEnd.diff(dateStart)).asMinutes(),
+                                    court: dataJoined[i].court,
+                                    datePart: moment(dataJoined[i].day).format("DD MMM"),
+                                    sourceWebsite: dataJoined[i].source_website,
+                                    availableCard: entry.is_available,
+                                });
+                                break;
                         }
                     }
                 }
@@ -125,6 +148,14 @@
             },
             setParsedAt: function () {
                 this.parsedAt = moment.duration(moment().diff(data[0].parsed_at));
+            },
+            viewAllCards: function () {
+                this.viewAll = !this.viewAll;
+                this.viewAllText = !this.viewAll ? 'View All' : 'View Available';
+                this.resetData(this.viewAll)
+                this.getCourts();
+                this.transform();
+                this.setParsedAt();
             }
         }
     }

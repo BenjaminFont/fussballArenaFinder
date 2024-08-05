@@ -41,4 +41,18 @@
       }
     }
   }
+  .card-wrapper.not-available {
+    background: $red-light;
+    opacity: 0.8;
+    &:hover {
+      cursor: unset;
+      border: 1px solid $grey-light;
+    }
+    .title,.pre-title,.description,.second-description {
+      color: white;
+    }
+    .second-description img {
+      color: $white;
+    }
+  }
 }
