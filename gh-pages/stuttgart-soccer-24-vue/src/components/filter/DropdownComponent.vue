@@ -1,7 +1,7 @@
 <template>
     <div class="dropdown">
         <Multiselect
-                style="min-height: 42px!important;min-width: 200px;max-width: 500px;"
+                style="min-width: 200px; max-width: 500px;"
                 class=""
                 mode="tags"
                 placeholder="Filter Courts"
@@ -34,4 +34,11 @@
         }
     }
 </script>
+
+<style scoped>
+.dropdown {
+  display: flex;
+  align-items: center;
+}
+</style>
 

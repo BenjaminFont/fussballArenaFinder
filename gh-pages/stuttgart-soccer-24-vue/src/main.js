@@ -1,8 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./assets/scss/app.scss"
 import "bootstrap"
-import SportsSoccerIcon from '@mui/icons-material/SportsSoccer'
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { createApp } from 'vue'
 import App from './App.vue'
+// add icons according to https://docs.fontawesome.com/web/use-with/vue/add-icons
+import {faEye, faEyeSlash} from "@fortawesome/free-regular-svg-icons";
 
-createApp({extends:App}).use(SportsSoccerIcon).mount('#app')
+library.add(faEye, faEyeSlash)
+createApp({extends:App}).mount('#app')

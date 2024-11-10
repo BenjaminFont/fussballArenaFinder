@@ -3,13 +3,9 @@
         <div class="main-wrapper">
             <header-component></header-component>
             <span v-if="parsedAt !== ''">Last updated {{Math.round(parsedAt.asMinutes())}} minutes ago</span>
-            <div
-                    v-on:click="viewAllCards"
-                    class="viewAllLink">
-                {{viewAllText}}
-            </div>
             <div class="filters-container">
                 <tabs-component :data="tabs" @dateOption="filterDataByDateCallback"></tabs-component>
+                <show-all @toggle="viewAllCards" style="margin-left: auto; margin-right: 2rem"></show-all>
                 <dropdown-component :data="courts" @options="filterDataByCourtsCallback"></dropdown-component>
             </div>
             <cards-component :data="data"></cards-component>
@@ -28,6 +24,7 @@
     import TabsComponent from "./filter/TabsComponent.vue";
     import DropdownComponent from "./filter/DropdownComponent.vue";
     import CardsComponent from "./cards/CardsComponent.vue";
+    import ShowAll from "./buttons/ShowAll.vue";
 
     export default {
         components: {
@@ -35,6 +32,7 @@
             TabsComponent,
             DropdownComponent,
             CardsComponent,
+            ShowAll,
         },
         data() {
             return {
@@ -59,7 +57,6 @@
                 courtFilter: [],
                 dateFilter: "",
                 viewAll: false,
-                viewAllText: 'View All'
             }
         },
         mounted() {
@@ -149,9 +146,8 @@
             setParsedAt: function () {
                 this.parsedAt = moment.duration(moment().diff(data[0].parsed_at));
             },
-            viewAllCards: function () {
-                this.viewAll = !this.viewAll;
-                this.viewAllText = !this.viewAll ? 'View All' : 'View Available';
+            viewAllCards: function (viewAll) {
+                this.viewAll = viewAll;
                 this.resetData(this.viewAll)
                 this.getCourts();
                 this.transform();
