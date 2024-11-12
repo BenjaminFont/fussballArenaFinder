@@ -19,12 +19,16 @@
     import data from "../scraped/data_today.json"
     import dataTomorrow from "../scraped/data_tomorrow.json"
     import dataOvermorrow from "../scraped/data_overmorrow.json"
-    import moment from "moment";
+    import dayjs from "dayjs";
+    import duration from 'dayjs/plugin/duration'
     import HeaderComponent from "./layout/HeaderComponent.vue";
     import TabsComponent from "./filter/TabsComponent.vue";
     import DropdownComponent from "./filter/DropdownComponent.vue";
     import CardsComponent from "./cards/CardsComponent.vue";
     import ShowAll from "./buttons/ShowAll.vue";
+
+    // senseless required step by day.js in docs https://day.js.org/docs/en/durations/durations
+    dayjs.extend(duration);
 
     export default {
         components: {
@@ -43,15 +47,15 @@
                 tabs: [
                     {
                         name: 'TODAY',
-                        value: moment().format('DD MMM'),
+                        value: dayjs().format('DD MMM'),
                     },
                     {
                         name: 'TOMORROW',
-                        value: moment().add(1, 'days').format('DD MMM'),
+                        value: dayjs().add(1, 'days').format('DD MMM'),
                     },
                     {
                         name: 'IN 2 DAYS',
-                        value: moment().add(2, 'days').format('DD MMM'),
+                        value: dayjs().add(2, 'days').format('DD MMM'),
                     }
                 ],
                 courtFilter: [],
@@ -73,16 +77,16 @@
                     for (let j in dataJoined[i].results) {
                         const entry = dataJoined[i].results[j];
                         const date = Date.parse(entry.time_slot_start)
-                        const dateStart =  moment(entry.time_slot_start);
-                        const dateEnd = moment(entry.time_slot_end);
+                        const dateStart =  dayjs(entry.time_slot_start);
+                        const dateEnd = dayjs(entry.time_slot_end);
                         switch (viewAll) {
                             case false:
                                 if (entry.is_available) {
                                     this.initialData.push({
                                         date: date,
-                                        duration: moment.duration(dateEnd.diff(dateStart)).asMinutes(),
+                                        duration: dayjs.duration(dateEnd.diff(dateStart)).asMinutes(),
                                         court: dataJoined[i].court,
-                                        datePart: moment(dataJoined[i].day).format("DD MMM"),
+                                        datePart: dayjs(dataJoined[i].day).format("DD MMM"),
                                         sourceWebsite: dataJoined[i].source_website,
                                         availableCard: true,
                                     });
@@ -91,9 +95,9 @@
                             case true:
                                 this.initialData.push({
                                     date: date,
-                                    duration: moment.duration(dateEnd.diff(dateStart)).asMinutes(),
+                                    duration: dayjs.duration(dateEnd.diff(dateStart)).asMinutes(),
                                     court: dataJoined[i].court,
-                                    datePart: moment(dataJoined[i].day).format("DD MMM"),
+                                    datePart: dayjs(dataJoined[i].day).format("DD MMM"),
                                     sourceWebsite: dataJoined[i].source_website,
                                     availableCard: entry.is_available,
                                 });
@@ -143,7 +147,7 @@
                 }
             },
             setParsedAt: function () {
-                this.parsedAt = moment.duration(moment().diff(data[0].parsed_at));
+                this.parsedAt = dayjs.duration(dayjs().diff(data[0].parsed_at));
             },
             viewAllCards: function (viewAll) {
                 this.viewAll = viewAll;

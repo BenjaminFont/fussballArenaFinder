@@ -1,5 +1,5 @@
 import {ArenaEntry, TimeSlot} from "../common.js";
-import moment from "moment-timezone";
+import dayjs from "dayjs";
 
 
 function groupBy(array, keySelector) {
@@ -38,12 +38,12 @@ export async function retrieveAvailableSlots(requested_date) {
   }
 
   const dateTimesWhenACourtIsAvailable = timesWhenACourtIsAvailable
-    .map(time => moment(requested_date).tz('europe/berlin').set({hours: time}))
+    .map(time => dayjs(requested_date).tz('europe/berlin').set({hours: time}))
     .filter((time) => time.isAfter())
 
   const availabilities = dateTimesWhenACourtIsAvailable.map(dateTimeWhenACourtIsAvailable => {
-    return new TimeSlot(dateTimeWhenACourtIsAvailable, moment(dateTimeWhenACourtIsAvailable).add(1, 'hours'), true)
+    return new TimeSlot(dateTimeWhenACourtIsAvailable, dayjs(dateTimeWhenACourtIsAvailable).add(1, 'hours'), true)
   })
 
-  return new ArenaEntry(court_meta.url, 'Hall of soccer', requested_date, availabilities, moment())
+  return new ArenaEntry(court_meta.url, 'Hall of soccer', requested_date, availabilities, dayjs())
 }

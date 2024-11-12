@@ -1,5 +1,5 @@
 import axios from "axios";
-import moment from "moment-timezone";
+import dayjs from "dayjs";
 import { ArenaEntry, TimeSlot } from "../common.js";
 
 
@@ -43,10 +43,10 @@ export async function scrape(requested_date) {
         const timeSlots = availabilities.Bookings.map(booking => {
             const date = booking.Date;
             const isAvailable = (booking.BookingStat === 0);
-            const ts = new TimeSlot(moment(date), moment(date).add(1, 'hours'), isAvailable);
+            const ts = new TimeSlot(dayjs(date), dayjs(date).add(1, 'hours'), isAvailable);
             return ts;
         })
-        return new ArenaEntry("https://booking.soccerolymp.de/", `SoccerOlymp/${courtName}`, requested_date, timeSlots, moment());
+        return new ArenaEntry("https://booking.soccerolymp.de/", `SoccerOlymp/${courtName}`, requested_date, timeSlots, dayjs());
     }));
     return arenas;
 }

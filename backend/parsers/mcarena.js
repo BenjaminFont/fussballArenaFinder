@@ -1,6 +1,6 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
-import moment from "moment-timezone";
+import dayjs from "dayjs";
 import { ArenaEntry, TimeSlot } from "../common.js";
 
 
@@ -37,7 +37,7 @@ async function parse(data, endpoint_url, requested_date) {
           .split(" - ", 2)
           .map((value) => {
             const dayOfSlot = value === "00:00" ? requested_date.clone().add(1, "DAYS") : requested_date;
-            const time = moment.tz(
+            const time = dayjs.tz(
               `${dayOfSlot.format("YYYY-MM-DD")} ${value}`, "YYYY-MM-DD hh:mm", "Europe/Berlin");
             return time;
           });
@@ -46,7 +46,7 @@ async function parse(data, endpoint_url, requested_date) {
       .filter((availability) => availability !== undefined)
       .sort((a, b) => a.time_slot_start - b.time_slot_start);
 
-    return new ArenaEntry(endpoint_url, location, requested_date, availabilities, moment());
+    return new ArenaEntry(endpoint_url, location, requested_date, availabilities, dayjs());
   });
 
   return courts;
