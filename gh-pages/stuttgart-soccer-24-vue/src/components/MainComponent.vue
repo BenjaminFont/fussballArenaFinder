@@ -72,14 +72,14 @@
                 for (let i in dataJoined) {
                     for (let j in dataJoined[i].results) {
                         const entry = dataJoined[i].results[j];
+                        const date = Date.parse(entry.time_slot_start)
                         const dateStart =  moment(entry.time_slot_start);
                         const dateEnd = moment(entry.time_slot_end);
                         switch (viewAll) {
                             case false:
                                 if (entry.is_available) {
                                     this.initialData.push({
-                                        dateStart: dateStart.format("HH:mm"),
-                                        dateEnd: dateEnd.format("HH:mm"),
+                                        date: date,
                                         duration: moment.duration(dateEnd.diff(dateStart)).asMinutes(),
                                         court: dataJoined[i].court,
                                         datePart: moment(dataJoined[i].day).format("DD MMM"),
@@ -90,8 +90,7 @@
                                 break;
                             case true:
                                 this.initialData.push({
-                                    dateStart: dateStart.format("HH:mm"),
-                                    dateEnd: dateEnd.format("HH:mm"),
+                                    date: date,
                                     duration: moment.duration(dateEnd.diff(dateStart)).asMinutes(),
                                     court: dataJoined[i].court,
                                     datePart: moment(dataJoined[i].day).format("DD MMM"),
