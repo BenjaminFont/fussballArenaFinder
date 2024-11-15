@@ -37,9 +37,13 @@ async function parse(data, endpoint_url, requested_date) {
           .split(" - ", 2)
           .map((value) => {
             const dayOfSlot = value === "00:00" ? requested_date.clone().add(1, "DAYS") : requested_date;
-            const time = dayjs.tz(
-              `${dayOfSlot.format("YYYY-MM-DD")} ${value}`, "YYYY-MM-DD hh:mm", "Europe/Berlin");
-            return time;
+            try {
+              return dayjs.tz(
+                  `${dayOfSlot.format("YYYY-MM-DD")} ${value}`, "YYYY-MM-DD hh:mm", "Europe/Berlin");
+            } catch {
+              // Happens when the row says, for example, "Kein Betrieb"
+              console.log(`Could not parse '${value}': invalid date time`);
+            }
           });
         return new TimeSlot(time_slots[0], time_slots[1], is_available);
       })
