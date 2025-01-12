@@ -45,9 +45,11 @@ async function parse(data, endpoint_url, requested_date) {
               console.log(`Could not parse '${value}': invalid date time`);
             }
           });
+        if (time_slots[0] === undefined)
+            return null;
         return new TimeSlot(time_slots[0], time_slots[1], is_available);
       })
-      .filter((availability) => availability !== undefined)
+      .filter((availability) => availability !== undefined && availability !== null)
       .sort((a, b) => a.time_slot_start - b.time_slot_start);
 
     return new ArenaEntry(endpoint_url, location, requested_date, availabilities, dayjs());
@@ -59,7 +61,7 @@ async function parse(data, endpoint_url, requested_date) {
 
 export async function scrape(requested_date) {
   const courts_metadata = [
-    { name: "McArena Schorndorf", url: "https://mcarena-schorndorf.de/reservations.php" },
+    { name: "McArena Schorndorf", url: "https://schorndorf.sportbuchung.net/reservations.php" },
     { name: "McArena Esslingen", url: "https://mcarena-esslingen.de/reservations.php" },
     { name: "McArena Aspach", url: "https://ssl.forumedia.eu/mcarena-aspach.de/reservations.php" },
     { name: "McArena Auenstein", url: "https://www.mcarena-auenstein.de/reservations.php" },
