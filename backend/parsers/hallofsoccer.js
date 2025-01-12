@@ -38,7 +38,7 @@ export async function retrieveAvailableSlots(requested_date) {
   }
 
   const dateTimesWhenACourtIsAvailable = timesWhenACourtIsAvailable
-    .map(time => dayjs(requested_date).tz('europe/berlin').set({hours: time}))
+    .map(time => dayjs(requested_date).tz('europe/berlin').set("hour", time))
     .filter((time) => time.isAfter())
 
   const availabilities = dateTimesWhenACourtIsAvailable.map(dateTimeWhenACourtIsAvailable => {
