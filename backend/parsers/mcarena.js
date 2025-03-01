@@ -37,12 +37,17 @@ async function parse(data, endpoint_url, requested_date) {
           .split(" - ", 2)
           .map((value) => {
             const dayOfSlot = value === "00:00" ? requested_date.clone().add(1, "DAYS") : requested_date;
+            // When the court is 'Vom Betreiber blockiert', we have to remove the spaces since it was done in the same
+            // paragraph
+            if (value.includes("    "))
+              value = value.split("    ", 1)[0]
+            // Try parsing the date
             try {
               return dayjs.tz(
                   `${dayOfSlot.format("YYYY-MM-DD")} ${value}`, "YYYY-MM-DD hh:mm", "Europe/Berlin");
             } catch {
               // Happens when the row says, for example, "Kein Betrieb"
-              console.log(`Could not parse '${value}': invalid date time`);
+              console.log(`Could not parse '${value}' for '${endpoint_url}': invalid date time`);
             }
           });
         if (time_slots[0] === undefined)
@@ -64,7 +69,7 @@ export async function scrape(requested_date) {
     { name: "McArena Schorndorf", url: "https://schorndorf.sportbuchung.net/reservations.php" },
     { name: "McArena Esslingen", url: "https://mcarena-esslingen.de/reservations.php" },
     { name: "McArena Aspach", url: "https://ssl.forumedia.eu/mcarena-aspach.de/reservations.php" },
-    { name: "McArena Auenstein", url: "https://www.mcarena-auenstein.de/reservations.php" },
+    { name: "McArena Auenstein", url: "https://auenstein.sportbuchung.net/reservations.php" },
   ];
 
   let results = await Promise.all(courts_metadata.map(async court_meta => {
