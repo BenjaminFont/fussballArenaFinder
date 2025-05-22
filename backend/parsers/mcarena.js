@@ -68,7 +68,7 @@ export async function scrape(requested_date) {
   const courts_metadata = [
     { name: "McArena Schorndorf", url: "https://schorndorf.sportbuchung.net/reservations.php" },
     { name: "McArena Esslingen", url: "https://esslingen.sportbuchung.net/reservations.php" },
-    { name: "McArena Aspach", url: "https://ssl.forumedia.eu/mcarena-aspach.de/reservations.php" },
+    { name: "McArena Aspach", url: "https://aspach.sportbuchung.net/reservations.php" },
     { name: "McArena Auenstein", url: "https://auenstein.sportbuchung.net/reservations.php" },
   ];
 
